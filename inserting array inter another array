@@ -1,0 +1,57 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a[100],b[10],i,j,k,l,m,size1,location,size2;
+printf("enter Number of terms in array:");
+scanf("%d",&size1);
+printf("Enter array:");
+for(i=0;i<size1;i++)
+    {
+        scanf("%d",a[i]);
+    }
+
+//first array entered//
+
+printf("Enter size of array to be inserted:");
+scanf("%d",&size2);
+
+//size of array that is to be inserted//
+
+printf("enter location to insert data:");
+scanf("%d",&location);
+
+// location in first array where second array to be inserted //
+
+printf("Enter Array to be insetred:");
+for(j=0;j<size2;j++)
+{
+   scanf("%d",b[j]);
+}
+
+//reading second array that is to be inserted//
+
+for(k=size1-1;k>=location;k--)
+{
+ a[k+1]=a[k];
+}
+
+//swifting terms in array in order to insert second array//
+
+for(l=0;l<size2;l++)
+{
+    a[location+l]=b[l];
+}
+
+//inserting second array//
+
+printf("The Final Array is");
+for(m=0;m<(size1+size2);m++)
+{
+  printf("d",a[m]);
+}
+
+//printing final array//
+
+getch();
+}
