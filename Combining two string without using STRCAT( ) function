@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+//purpose: to combine two strings//
+//Author:Naga Satish Chitturi//
+//Mail ID: cnagasatish1@gmail.com//
+int main()
+{
+    char a[100],b[100];
+    int i,l,m;
+    printf("enter string1:");
+    gets(a);
+    printf("enter string 2:");
+    gets(b);
+    l=strlen(a);
+    m=strlen(b);
+    for(i=0;i<m;i++)
+    {
+        a[l+i]=b[i];
+    }
+    printf("Combined string is %s",a);
+    getch();
+    return 0;
+}
