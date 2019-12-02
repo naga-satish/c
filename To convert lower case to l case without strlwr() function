@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
 #include<string.h>
-//Purpose: To convert lower case to l case without strlwr() function//
+//Purpose: To convert lower case to upper case without string function//
 //Author: Naga Satish Chitturi//
 //Email ID: cnagasatish1@gmail.com//
 int upper(char x[]);
