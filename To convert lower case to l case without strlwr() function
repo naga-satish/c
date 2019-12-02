@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+//Purpose: To convert lower case to l case without strlwr() function//
+//Author: Naga Satish Chitturi//
+//Email ID: cnagasatish1@gmail.com//
+int upper(char x[]);
+int main()
+{
+  char a[100];
+  printf("Enter random string:");
+  gets(a);
+  upper(a);
+  getch();
+}
+int upper(char y[])
+{
+    int j=0;
+    while(y[j]!='\0')
+    {
+        if(y[j]>=96&&y[j]<122)
+  {
+      y[j]=y[j]-32;
+  }
+  j++;
+    }
+      printf("\nUpper case to Lower case converted string is ");
+  printf("%s",y);
+ return 0;
+}
