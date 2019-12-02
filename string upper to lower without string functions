@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+//Purpose: To convert string upper case to lower case without strupr() function//
+//Author: Naga Satish Chitturi//
+//Email ID: cnagasatish1@gmail.com//
+int lower(char x[]);
+int main()
+{
+  char a[100];
+  printf("Enter random string:");
+  gets(a);
+  lower(a);
+  getch();
+}
+int lower(char x[])
+{
+    int i=0;
+    while(x[i]!='\0')
+        {
+            if(x[i]>=65&&x[i]<90)
+            {
+                x[i]=x[i]+32;
+            }
+            i++;
+    }
+      printf("Upper case to Lower case converted string is ");
+  printf("%s",x);
+  return 0;
+}
